@@ -1,0 +1,152 @@
+/* 
+war: time to make iframe work!!!
+*/
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #202020;
+    height: 100%;
+}
+a {
+    font-weight: 700;
+    color: #FFE06C;
+    text-decoration: none;
+    outline: none;
+}
+a:hover, a:focus  {
+    color: #202020;
+}
+a:focus {
+    text-decoration: underline;
+}
+img {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+iframe {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+}
+.web-app {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+    top: 0;
+}
+.about {
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #707070;
+    top: 0;
+}
+.text-info {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1vh 15%;
+    top: 0;
+    text-align: center;
+    opacity: 0.85;
+    background-color: #707070;
+    color: #FFFFFF;
+    font-size: max(12px, 1.1vw);
+    line-height: max(20px, 1.5vw);
+}
+.info, .delete{
+    cursor: pointer;
+    font-size: max(16px, 1.2vw);
+    font-weight: bold;
+    position: absolute;
+    right: 0.75vh;
+    top: 0.75vh;
+    padding: max(2px, 0.1vw) max(6px, 0.4vw);
+    background-color: #FFFFFF;
+    color: #3F3F3F;
+    outline: none;
+    border: none;
+    border-radius: 35px ;
+    z-index: 5;
+}
+.info:hover {
+    color: #707070;
+}
+.close {
+    background-color: #FFE06C;
+    color: #3F3F3F;
+}
+.delete {
+    z-index: 1000;
+    background-color: red;
+    color: white;
+}
+.sliders {
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1300px;
+    margin: 30vh auto 0;
+    
+}
+.slider-element {
+    position: relative;
+    width: 30em;
+    height: 20em;
+    margin: 0 1%;
+    border: 2px solid #FFE06C;
+}
+.aside {
+    width: 21em;
+    height: 14em;
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 3vw;
+    opacity: 0.75;
+}
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}
+.filler {
+    visibility: hidden;
+}
+@media (max-width: 1200px) {
+    .sliders {
+        max-width: 900px;
+    }
+    .slider-element{
+        width: 21em;
+        height: 14em;
+    }
+    .aside {
+        width: 15em;
+        height: 10em;
+    } 
+
+}
+@media (max-width: 800px) {
+    .sliders {
+        max-width: 600px;
+    }
+    .slider-element{
+        width: 12em;
+        height: 8em;
+    }
+    .aside {
+        width: 9em;
+        height: 6em;
+    }
+
+}
